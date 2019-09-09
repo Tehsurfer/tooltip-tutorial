@@ -1,0 +1,19 @@
+{
+  "name": "charot",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "browserify tutorial.js -o main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chariot-tooltips": "^1.0.0",
+    "jquery": "^3.4.1"
+  },
+  "devDependencies": {
+    "browserify": "^16.5.0"
+  }
+}
