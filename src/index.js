@@ -1,3 +1,9 @@
+import jquery from 'jquery';
+window.$ = window.jQuery=jquery;
+const chariot = require('chariot-tooltips')
+require('chariot-tooltips/release/chariot.css')
+require('chariot-tooltips/example/example-tooltip.css')
+
 document.getElementById('second').onclick = function(){ window.open('https://www.google.com/search?q=my+ip+address') }
 var char = new chariot({
     example4: [
