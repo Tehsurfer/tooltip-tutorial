@@ -1,3 +1,5 @@
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+
 const path = require('path');
 module.exports = {
   mode: 'production',
@@ -23,5 +25,8 @@ module.exports = {
     inline: true,
     host: '0.0.0.0',
     port: 8080,
-  }
+  },
+  plugins: [
+    new BundleAnalyzerPlugin()
+  ]
 };

@@ -1,4 +1,5 @@
 import jquery from 'jquery';
+import tippy from 'tippy.js'
 window.$ = window.jQuery=jquery;
 const chariot = require('chariot-tooltips')
 require('chariot-tooltips/release/chariot.css')
@@ -36,3 +37,19 @@ var char = new chariot({
   });
 
   char.startTutorial('example4')
+
+  tippy('#first',{
+    content: 'The first div does nothing',
+    placement: 'right',
+    animateFill: false,
+    animation: 'shift-away',
+    arrow: true,
+  })
+
+  tippy('#second',{
+    content: 'Click to see your IP address',
+    placement: 'bottom',
+    animateFill: false,
+    animation: 'shift-away',
+    arrow: true,
+  })
